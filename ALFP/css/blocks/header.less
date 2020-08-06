@@ -1,0 +1,72 @@
+// main: ../style-less.less
+@import "../mixins.less";
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  cursor: pointer;
+  color: @text-color;
+  text-decoration: none;
+}
+
+.logo-with-text-pic {
+  .flex-basic1;
+  justify-content: space-between;
+  .padding-l-r;
+  min-height: 100%;
+}
+
+.logo-img img {
+  width: 100px;
+}
+
+.logo-text {
+  background-size: cover;
+  .flex-basic2;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: @text-color;
+  font-size: 2.3rem;
+  z-index: 3;
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo-text h1 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.logo-text h2 {
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.header-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header-logo img {
+  max-width: 100%;
+  height: 90mvh;
+  min-height: 100%;
+}
+
+.video-cont img {
+  width: 100%;
+}
+
+.video-cont {
+  width: 100%;
+  height: 100%;
+}

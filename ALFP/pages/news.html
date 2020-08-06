@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Legends Fan Page</title>
+  <link rel="shortcut icon" href="../img/logo/logo-ico.png" type="image/png" />
+  <link rel="stylesheet" href="../css/style-less.css">
+  <link rel="stylesheet" href="../css/normalyze.css">
+  <link rel="stylesheet" href="../css/ui.totop.css">
+  <script src="../js/jquery-3.5.0.js"></script>
+  <script src="../js/animation-burger-menu.js"></script>
+  <script src="../js/easing.js"></script>
+  <script src="../js/jquery.ui.totop.js"></script>
+  <script>
+    $(document).ready(function () {
+      /*
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+    */
+
+      $().UItoTop({
+        easingType: "easeOutQuart",
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="logo">
+          <div class="logo-with-text-pic">
+            <div class="logo-img">
+              <img src="../img/logo/logo-ico.png" alt="Apex Logo">
+            </div>
+            <a href="../index.html">
+              <h1>APEX LEGENDS FAN PAGE</h1>
+            </a>
+            <div class="logo-img">
+              <img src="../img/logo/logo-ico.png" alt="Apex Logo">
+            </div>
+          </div>
+
+          <div class="header-logo">
+            <div class="logo-text">
+              <h1>Apex Legend</h1>
+              <h2>Новости, посвященные твоей любимой игре</h2>
+            </div>
+            <img src="../img/logo/news-page-logo.jpg" alt="">
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="burger-menu">
+          <a class="burger-menu__button1" onclick="burgerMenu()">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <a class="burger-menu__button2" onclick="burgerMenu2()" style="display: none;">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <nav class="burger-menu__nav">
+            <a href="../index.html" class="burger-menu__link">Главная</a>
+            <a href="news.html" class="burger-menu__link">Новости</a>
+            <a href="character.html" class="burger-menu__link">Персонажи</a>
+            <a href="guids.html" class="burger-menu__link">Гайды</a>
+            <a href="about-us.html" class="burger-menu__link">О нас</a>
+          </nav>
+          <div class="burger-menu__overlay" onclick="overlayMenu()"></div>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html"><span></span><span></span><span></span><span></span>Главная</a>
+          </li>
+          <li>
+            <a href="news.html"><span></span><span></span><span></span><span></span>Новости</a>
+          </li>
+          <li>
+            <a href="character.html"><span></span><span></span><span></span><span></span>Персонажи</a>
+          </li>
+          <li>
+            <a href="guids.html"><span></span><span></span><span></span><span></span>Гайды</a>
+          </li>
+          <li>
+            <a href="about-us.html"><span></span><span></span><span></span><span></span>О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-content news-page">
+          <h1 class="page-title">Последние новости</h1>
+          <div class="news-container">
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/apex-legends-season4.png" alt=""></div>
+              <div class="news-discription-title">Рейтинговая серия 4 в Apex Legends</div>
+              <div class="new-discription-text">Старт новой рейтинговой серии намечается на 12 мая! Вас ждут новые
+                измениния на карте, новая легенда и новый боевой пропуск.</div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/armor-event.jpg" alt=""></div>
+              <div class="news-discription-title">Событие "Боевая броня"</div>
+              <div class="new-discription-text">Примите участие в новом событии "Боевая броня", которая пройдет с 28
+                апреля по 12 мая.</div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/apex-old-ways.jpg" alt=""></div>
+              <div class="news-discription-title">Сюжетное событие, посвященное Бладхаунду</div>
+              <div class="new-discription-text">Примите участие в "Ристалищах Бладхаунда", где вам придстоит сражаться с
+                ищейками ради высокоуровневой добычи, которое будет проходить с 7 по 21 апреля.</div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/apex-system-override-event.jpg" alt=""></div>
+              <div class="news-discription-title">Коллекционное событие "Захват системы"</div>
+              <div class="new-discription-text">Приготовтесть к коллекционному событию "Захват системы", где вас ждет
+                много нового контента, которое пройдет с 3 по 17 марта.</div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/apex-valentines.jpg" alt=""></div>
+              <div class="news-discription-title">Событие посвященное "Дню Святого Валентина"</div>
+              <div class="new-discription-text">Пригласите своего близкого друга для участия в событие, которой
+                произойдет с 12 по 19 февраля</div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-img"><img src="../img/news-page-img/third-season-start.jpg" alt=""></div>
+              <div class="news-discription-title">Старт 4 сезона в Apex Legends</div>
+              <div class="new-discription-text">Встречайте старт нового 4 сезона в Apex Legends, которое начнется 4
+                февраля. </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="site-name">
+          <img src="../img/logo/logo-ico.png" alt="Apex Logo">
+          <h1>ALFP</h1>
+          <img src="../img/logo/logo-ico.png" alt="Apex Logo">
+        </div>
+        <div class="social-site-account">
+          <div>
+            <a href="https://vk.com/titanfall" target="_blank" rel="noopener noreferrer">
+              <img src="../img/social-icons/vk.png" alt="VK"></a>
+          </div>
+          <div>
+            <a href="https://www.reddit.com/r/apexlegends/" target="_blank" rel="noopener noreferrer">
+              <img src="../img/social-icons/reddit.png" alt="Reddit"></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/playapex" target="_blank" rel="noopener noreferrer">
+              <img src="../img/social-icons/twitter.png" alt="Twitter"></a>
+          </div>
+          <div>
+            <a href="https://ru-ru.facebook.com/playapex/" target="_blank" rel="noopener noreferrer">
+              <img src="../img/social-icons/facebook.png" alt="FaceBook"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

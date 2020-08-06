@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Legends Fan Page</title>
+  <link rel="shortcut icon" href="../img/logo/logo-ico.png" type="image/png" />
+  <link rel="stylesheet" href="../css/style-less.css" />
+  <link rel="stylesheet" href="../css/normalyze.css" />
+  <link rel="stylesheet" href="../css/ui.totop.css" />
+  <script src="../js/jquery-3.5.0.js"></script>
+  <script src="../js/easing.js"></script>
+  <script src="../js/jquery.ui.totop.js"></script>
+  <script>
+    $(document).ready(function () {
+      /*
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+    */
+
+      $().UItoTop({
+        easingType: "easeOutQuart",
+      });
+    });
+  </script>
+  <script src="../js/animation-burger-menu.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="logo">
+          <div class="logo-with-text-pic">
+            <div class="logo-img">
+              <img src="../img/logo/logo-ico.png" alt="Apex Logo" />
+            </div>
+            <a href="../index.html">
+              <h1>APEX LEGENDS FAN PAGE</h1>
+            </a>
+            <div class="logo-img">
+              <img src="../img/logo/logo-ico.png" alt="Apex Logo" />
+            </div>
+          </div>
+
+          <div class="header-logo">
+            <div class="logo-text">
+              <h1>Apex Legend</h1>
+              <h2>Встречайте Легед игры "Apex"</h2>
+            </div>
+            <div class="video-cont">
+              <img src="../img/logo/characters-logo.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="burger-menu">
+          <a class="burger-menu__button1" onclick="burgerMenu()">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <a class="burger-menu__button2" onclick="burgerMenu2()" style="display: none;">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <nav class="burger-menu__nav">
+            <a href="../index.html" class="burger-menu__link">Главная</a>
+            <a href="news.html" class="burger-menu__link">Новости</a>
+            <a href="character.html" class="burger-menu__link">Персонажи</a>
+            <a href="guids.html" class="burger-menu__link">Гайды</a>
+            <a href="about-us.html" class="burger-menu__link">О нас</a>
+          </nav>
+          <div class="burger-menu__overlay" onclick="overlayMenu()"></div>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html"><span></span><span></span><span></span><span></span>Главная</a>
+          </li>
+          <li>
+            <a href="news.html"><span></span><span></span><span></span><span></span>Новости</a>
+          </li>
+          <li>
+            <a href="character.html"><span></span><span></span><span></span><span></span>Персонажи</a>
+          </li>
+          <li>
+            <a href="guids.html"><span></span><span></span><span></span><span></span>Гайды</a>
+          </li>
+          <li>
+            <a href="about-us.html"><span></span><span></span><span></span><span></span>О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-content character-page">
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/loba-logo.png" alt="Лоба" />
+              <h2>Лоба</h2>
+              <h2 class="character-dicription">Вор из высшего общества</h2>
+            </div>
+            <a href="../pages/characters/loba.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/bangalor-logo.png" alt="Бангалор" />
+              <h2>Бангалор</h2>
+              <h2 class="character-dicription">Профессиональный солдат</h2>
+            </div>
+            <a href="../pages/characters/bangolor.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/bloodhound-logo.png" alt="Бладхаунд" />
+              <h2>Бладхаунт</h2>
+              <h2 class="character-dicription">Техноследопыт</h2>
+            </div>
+            <a href="../pages/characters/bloodhaund.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/caustic-logo.png" alt="Каустик" />
+              <h2>Каустик</h2>
+              <h2 class="character-dicription">Сумасшедший учёный</h2>
+            </div>
+            <a href="../pages/characters/caustic.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/crypto-logo.png" alt="Крипто" />
+              <h2>Крипто</h2>
+              <h2 class="character-dicription">Крутой хакер</h2>
+            </div>
+            <a href="../pages/characters/crypto.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/gibraltar-logo.png" alt="Гибралтар" />
+              <h2>Гибралтар</h2>
+              <h2 class="character-dicription">Несокрушимая крепость</h2>
+            </div>
+            <a href="../pages/characters/gibraltar.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/lifeline-logo.png" alt="Лайфлайн" />
+              <h2>Лайфлайн</h2>
+              <h2 class="character-dicription">Полевой врач</h2>
+            </div>
+            <a href="../pages/characters/lifeline.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/mirage-logo.png" alt="Мираж" />
+              <h2>Мираж</h2>
+              <h2 class="character-dicription">Голографический трюкач</h2>
+            </div>
+            <a href="../pages/characters/mirage.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/octane-logo.png" alt="Октейн" />
+              <h2>Октейн</h2>
+              <h2 class="character-dicription">Безбашенный бегун</h2>
+            </div>
+            <a href="../pages/characters/octain.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/pathfinder-logo.png" alt="Патфайндер" />
+              <h2>Патфайндер</h2>
+              <h2 class="character-dicription">Идеальный разведчик</h2>
+            </div>
+            <a href="../pages/characters/pathfinter.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/revenant-logo.png" alt="Ревенант" />
+              <h2>Ревенант</h2>
+              <h2 class="character-dicription">Настоящий кошмар</h2>
+            </div>
+            <a href="../pages/characters/revenant.html ">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/wattson-logo.png" alt="Ваттсон" />
+              <h2>Ваттсон</h2>
+              <h2 class="character-dicription">Непоколебимый защитник</h2>
+            </div>
+            <a href="../pages/characters/wattson.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+          <div class="char-logo-item">
+            <div class="character-name">
+              <img src="../img/characters/characters-logo/wraith-logo.png" alt="Рейф" />
+              <h2>Рейф</h2>
+              <h2 class="character-dicription">Пространственный боец</h2>
+            </div>
+            <a href="../pages/characters/wraith.html">
+              <div class="button">
+                <p>Узнать</p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="site-name">
+          <img src="../img/logo/logo-ico.png" alt="" />
+          <h1>ALFP</h1>
+          <img src="../img/logo/logo-ico.png" alt="" />
+        </div>
+        <div class="social-site-account">
+          <div>
+            <a href="https://vk.com/titanfall" target="_blank" rel="noopener noreferrer"><img
+                src="../img/social-icons/vk.png" alt="VK" /></a>
+          </div>
+          <div>
+            <a href="https://www.reddit.com/r/apexlegends/" target="_blank" rel="noopener noreferrer"><img
+                src="../img/social-icons/reddit.png" alt="Reddit" /></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/playapex" target="_blank" rel="noopener noreferrer"><img
+                src="../img/social-icons/twitter.png" alt="Twitter" /></a>
+          </div>
+          <div>
+            <a href="https://ru-ru.facebook.com/playapex/" target="_blank" rel="noopener noreferrer"><img
+                src="../img/social-icons/facebook.png" alt="FaceBook" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

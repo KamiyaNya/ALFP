@@ -1,0 +1,71 @@
+@import "vars";
+@import "mixins";
+
+*,
+*::before,
+*::after {
+  font-family: Roboto;
+
+  @font-face {
+    font-family: Roboto;
+    src: url("../font/Robotoslabregular.ttf");
+    src: url("../font/Robotoslabregular.woff");
+    src: url("../font/Robotoslabregular.woff2");
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  background-color: @primary;
+  color: @main-red;
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: 1fr 60px auto 80px;
+  position: relative;
+}
+
+.main-content {
+  display: block;
+  .padding-l-r;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -moz-padding-top: 50px;
+  -moz-padding-bottom: 50px;
+}
+
+// Blocks
+@import "blocks/header"; //header.less
+@import "blocks/nav"; //nav.less
+@import "blocks/main-index-page"; //main-index-page.less
+@import "blocks/main-news-page"; //main-news-page.less
+@import "blocks/main-character-page"; //main-character-page.less
+@import "blocks/character-page";
+@import "blocks/main-guide-page"; //main-guide-page.less
+@import "blocks/main-aboutus-page"; //main-aboutus-page.less
+@import "blocks/footer"; //footer.less
+@import "media"; //footer.less

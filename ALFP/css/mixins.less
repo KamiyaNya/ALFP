@@ -1,0 +1,78 @@
+// main: style-less.less
+@import "vars";
+
+.flex-basic1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-basic2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.padding-l-r {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%; -50%);
+}
+
+.h1-basic {
+  text-align: center;
+  color: @text-color;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid @white;
+  border-bottom: 1px solid @white;
+  border-radius: 10px;
+}
+
+.h2-basic {
+  color: @text-color;
+  font-size: 2rem;
+  padding: 0 30px;
+}
+
+.grid-basic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.grid-basic2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.grid-basic3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+  grid-gap: 20px;
+}
+
+.grid-basic4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+
+.video-author-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: @text-color;
+  padding: 20px 0;
+}

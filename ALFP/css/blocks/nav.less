@@ -1,0 +1,105 @@
+// main: ../style-less.less
+
+.nav-link {
+  color: @text-color
+}
+
+nav {
+  position: relative;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.nav-menu {
+  .flex-basic1;
+  justify-content: space-evenly;
+  list-style-type: none;
+  .padding-l-r;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: @text-color;
+  display: inline-block;
+  width: 150px;
+  max-width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-menu a span {
+  position: absolute;
+  display: block;
+}
+
+.nav-menu a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, @main-red);
+}
+
+.nav-menu a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.2s;
+}
+
+.nav-menu a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, @main-red);
+}
+
+.nav-menu a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.2s;
+  transition-delay: 0.05s;
+}
+
+.nav-menu a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, @main-red);
+}
+
+.nav-menu a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+
+.nav-menu a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, @main-red);
+}
+
+.nav-menu a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.2s;
+  transition-delay: 0.15s;
+}
+
+.nav-menu a:hover {
+  color: @main-red;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}

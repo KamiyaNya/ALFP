@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Legends Fan Page</title>
+  <link rel="shortcut icon" href="img/logo/logo-ico.png" type="image/png" />
+  <link rel="stylesheet" href="css/style-less.css" />
+  <link rel="stylesheet" href="css/normalyze.css" />
+  <link rel="stylesheet" href="css/ui.totop.css" />
+  <script src="js/jquery-3.5.0.js"></script>
+  <script src="js/animation-burger-menu.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/jquery.ui.totop.js"></script>
+  <script>
+    $(document).ready(function () {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+    */
+
+      $().UItoTop({
+        easingType: "easeOutQuart",
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="logo">
+          <div class="logo-with-text-pic">
+            <div class="logo-img">
+              <img src="img/logo/logo-ico.png" alt="Apex Logo" />
+            </div>
+            <a href="index.html">
+              <h1>APEX LEGENDS FAN PAGE</h1>
+            </a>
+            <div class="logo-img">
+              <img src="img/logo/logo-ico.png" alt="Apex Logo" />
+            </div>
+          </div>
+          <div class="header-logo">
+            <div class="logo-text">
+              <h1>Apex Legend</h1>
+              <h2>Новое слово в жанре "королевская битва"</h2>
+            </div>
+            <div class="video-cont">
+              <img src="img/index-img/1096615.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="burger-menu">
+          <a class="burger-menu__button1" onclick="burgerMenu()">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <a class="burger-menu__button2" onclick="burgerMenu2()" style="display: none;">
+            <span class="burger-menu__lines"></span>
+          </a>
+          <nav class="burger-menu__nav">
+            <a href="index.html" class="burger-menu__link">Главная</a>
+            <a href="pages/news.html" class="burger-menu__link">Новости</a>
+            <a href="pages/character.html" class="burger-menu__link">Персонажи</a>
+            <a href="pages/guids.html" class="burger-menu__link">Гайды</a>
+            <a href="pages/about-us.html" class="burger-menu__link">О нас</a>
+          </nav>
+          <div class="burger-menu__overlay" onclick="overlayMenu()"></div>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html"><span></span><span></span><span></span><span></span>Главная</a>
+          </li>
+          <li>
+            <a href="pages/news.html"><span></span><span></span><span></span><span></span>Новости</a>
+          </li>
+          <li>
+            <a href="pages/character.html"><span></span><span></span><span></span><span></span>Персонажи</a>
+          </li>
+          <li>
+            <a href="pages/guids.html"><span></span><span></span><span></span><span></span>Гайды</a>
+          </li>
+          <li>
+            <a href="pages/about-us.html"><span></span><span></span><span></span><span></span>О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-content index-page">
+          <div class="about-game-row">
+            <div class="game-img">
+              <img src="img/index-img/game-img.jpg" alt="Image" />
+            </div>
+            <div class="game-discription">
+              <p>
+                Apex Legends — компьютерная игра в жанре
+                многопользовательского шутера от первого лица и королевской
+                битвы, разработанная американской студией Respawn
+                Entertainment и выпущенная компанией Electronic Arts для
+                платформ Windows, PlayStation 4 и Xbox One в 4 февраля 2019
+                года. Хоть эта игра и является многопользовательской игрой, в
+                ней есть сюжет, который разворачивается в той же вселенной,
+                что и TitanFall, их другая игра, которая завоевала свою
+                аудиторию.
+              </p>
+            </div>
+          </div>
+          <div class="about-game-row">
+            <div class="game-img">
+              <img src="img/index-img/game-img2.png" alt="Image" />
+            </div>
+            <div class="game-discription">
+              <p>
+                Apex Legends представляет из себя тактический шутер с
+                командным состовляющим. Геймплей строиться на командной
+                работе, состоящий из 3 легенд с индивидуальными наборами
+                способностей. Одна легенда может использовать крюк и
+                преодолевать огромные расстояния, а другая легенда сможет
+                укрыть вас куполом от арт-обстрела.
+              </p>
+            </div>
+          </div>
+          <div class="about-game-row1">
+            <div class="game-discription1">
+              <h1>ВАШ ОТРЯД</h1>
+              <p>
+                Выберите легенду, собери отряд из своих друзей или объединись
+                с другими игроками, чтобы завоевать победу в играх APEX,
+                грамотно сочетая ваши уникальные умения.
+              </p>
+            </div>
+            <div class="game-img1">
+              <div>
+                <div class="image-box">
+                  <img src="img/index-img/game-img3.jpg" alt="Image" />
+                </div>
+                <div class="img-discription">
+                  <h2>Стратегическая королевкая битва</h2>
+                  <p>
+                    Выберите себе легенду, изучайте его способности и вперед
+                    побеждать в играх Apex. Учитесть быстро придумывать
+                    тактики и принимать решения на ходу. Используйте
+                    способности героя граммотно, сражаясь в матчах на 60
+                    игроков.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="image-box">
+                  <img src="img/index-img/game-img5.jpg" alt="Image" />
+                </div>
+                <div class="img-discription">
+                  <h2>Инновационная система</h2>
+                  <p>
+                    Попробуйте свои силы в игре. Продуманная система
+                    возрождения для своих союзников, умная связь в виде меток
+                    для быстрого взаимодейсвтия с товарищамя, интелектуальное
+                    снаряжение для сбора нужных вещей и новый способ
+                    десантирования.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="image-box">
+                  <img src="img/index-img/game-img41.jpg" alt="Image" />
+                </div>
+
+                <div class="img-discription">
+                  <h2>Регулярные сезоны</h2>
+                  <p>
+                    Вас ждут регулярные сезоны и мероприятия в игре.
+                    Сражайтесь в сезонах и открывайте новых легенд, уникальные
+                    раскраски для оружия и легенд, тематическую добычу и много
+                    чего нового.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-info">
+            <h1>Узнайте больше</h1>
+            <div class="info-img-box">
+              <div class="info-img-item">
+                <div class="info-img">
+                  <img src="img/index-img/legends.jpeg" alt="" />
+                </div>
+                <div class="info-title">
+                  <a href="pages/character.html">
+                    <h3>Легенды</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="info-img-item">
+                <div class="info-img">
+                  <img src="img/index-img/news-img.jpg" alt="" />
+                </div>
+                <div class="info-title">
+                  <a href="pages/news.html">
+                    <h3>Новости</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="info-img-item">
+                <div class="info-img">
+                  <img src="img/index-img/guids-img.jpg" alt="" />
+                </div>
+                <div class="info-title">
+                  <a href="pages/guids.html">
+                    <h3>Гайды</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="site-name">
+          <img src="img/logo/logo-ico.png" alt="" />
+          <h1>ALFP</h1>
+          <img src="img/logo/logo-ico.png" alt="" />
+        </div>
+        <div class="social-site-account">
+          <div>
+            <a href="https://vk.com/titanfall" target="_blank" rel="noopener noreferrer">
+              <img src="img/social-icons/vk.png" alt="VK" /></a>
+          </div>
+          <div>
+            <a href="https://www.reddit.com/r/apexlegends/" target="_blank" rel="noopener noreferrer">
+              <img src="img/social-icons/reddit.png" alt="Reddit" /></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/playapex" target="_blank" rel="noopener noreferrer">
+              <img src="img/social-icons/twitter.png" alt="Twitter" /></a>
+          </div>
+          <div>
+            <a href="https://ru-ru.facebook.com/playapex/" target="_blank" rel="noopener noreferrer">
+              <img src="img/social-icons/facebook.png" alt="FaceBook" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

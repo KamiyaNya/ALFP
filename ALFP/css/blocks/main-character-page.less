@@ -1,0 +1,84 @@
+// main: ../style-less.less
+a {
+  text-decoration: none;
+}
+
+.character-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  text-align: center;
+}
+
+.character-dicription {
+  font-size: 20px;
+}
+
+.char-logo-item h2 {
+  font-weight: normal;
+  color: @text-color;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.char-logo-item {
+  .flex-basic2;
+  align-items: center;
+}
+
+.character-name {
+  padding-bottom: 10%;
+  height: 100%;
+  max-height: 780px;
+}
+
+.char-logo-item img {
+  width: 67%;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid red;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button p {
+  display: none;
+  color: transparent;
+}
+
+.button:hover,
+.button:focus {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.button:hover p {
+  display: block;
+  color: red;
+}
+
+.button span {
+  .position-center;
+  width: 30px;
+  height: 4px;
+  background: red;
+}
+
+.button span:nth-child(2) {
+  top: 17px;
+  left: 50%;
+}
+
+.button span:nth-child(3) {
+  top: 33px;
+  left: 50%;
+}
+
+.button:hover span {
+  display: none;
+}

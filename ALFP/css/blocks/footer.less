@@ -1,0 +1,63 @@
+// main: ../style-less.less
+@import "../mixins.less";
+
+.footer {
+  .flex-basic1;
+  .padding-l-r;
+}
+
+.site-name h1 {
+  margin: 0;
+}
+
+.site-name img {
+  width: 100px;
+}
+
+.site-name {
+  .flex-basic1;
+  justify-content: space-between;
+  width: 50%;
+  text-align: center;
+  line-height: 80px;
+  color: @text-color;
+}
+
+.social-site-account {
+  .flex-basic1;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-site-account div {
+  .flex-basic1;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-site-account a {
+  text-align: center;
+}
+
+.social-site-account div:nth-child(1) img {
+  width: 50px;
+}
+
+.social-site-account div:nth-child(2) img {
+  width: 70px;
+}
+
+.social-site-account div:nth-child(3) img {
+  width: 40px;
+}
+
+.social-site-account div:nth-child(4) img {
+  width: 40px;
+}
+
+.social-site-account div:hover {
+  background: @main-red;
+}

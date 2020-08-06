@@ -1,0 +1,120 @@
+// main: ../style-less.less
+
+.about-game-row {
+    .grid-basic2;
+}
+
+.game-img img {
+    width: 100%;
+}
+
+.game-discription p {
+    font-size: 1.5rem;
+    color: @text-color;
+}
+
+.game-discription:nth-child(1) {
+    text-align: justify;
+}
+
+.about-game-row1 {
+    .flex-basic2;
+}
+
+.game-discription1 h1 {
+    border-top: 1px solid @white;
+    border-radius: 10px;
+    padding-top: 20px;
+    .h1-basic;
+}
+
+.game-discription1 p {
+    text-align: center;
+    color: @text-color;
+    font-size: 1.3rem;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.game-img1 {
+    .flex-basic1;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.game-img1 div {
+    .flex-basic2;
+    width: 100%;
+}
+
+.image-box {
+    .flex-basic1;
+    width: 80%;
+    align-items: center;
+}
+
+.image-box img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.img-discription p {
+    padding: 10px 30px;
+    color: @text-color;
+    font-size: 1.2rem;
+}
+
+.img-discription h2 {
+    height: 90px;
+    .h2-basic;
+}
+
+.more-info h1 {
+    .h1-basic;
+}
+
+.info-img-box {
+    .flex-basic1;
+}
+
+.info-img-box a {
+    color: @text-color;
+    font-size: 1.3rem;
+}
+
+.info-title {
+    position: relative;
+}
+
+.info-title h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-title a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: @white;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.info-title a:hover:before {
+    color: @main-red;
+    transform: scale(1);
+}
+
+.info-img-item {
+    .flex-basic2;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.info-img-box img {
+    width: 100%;
+    border-radius: 5px;
+}
